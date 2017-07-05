@@ -1,7 +1,9 @@
 /*** Global ***/
 
 * {
+  /*
   border: 1px solid red;
+  */
 }
 
 body, html {
@@ -9,11 +11,32 @@ body, html {
   margin: 0;
 }
 
-body, ul, ol, li, p {
+body, ul, ol, li, p, h6 {
   color: black;
   font-family: Verdana, serif;
   font-size: 14px;
   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+div.overlay {
+
+}
+
+p.overlay {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
 }
 
 /*** Header ***/
@@ -29,31 +52,103 @@ header {
   justify-content: space-around;
 }
 
-header div.logo {
+/*** Logo ***/
+
+div.logo {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div.logo img {
   margin: auto 0;
   display: inline-flex;
-
 }
 
-header div.logo img {
-  margin: auto 0;
-}
-
-header div.logo h6 {
+h6.logo {
+  font-size: 14px;
   text-decoration: none;
   display: inline-flex;
   margin-left: 10px;
   color: MediumAquamarine;
 }
 
-nav ul li {
-  display: inline-flex;
+/*** Menu ***/
+
+nav.menu {
   margin: auto 0;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-header h6,
-nav ul li a {
-  font-size: 14px;
+nav.menu ul li {
+  display: inline-flex;
+}
+
+nav.menu ul li a {
   color: black;
   font-weight: bold;
 }
+
+/*** Main ***/
+
+div.main {
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.column-1,
+.column-2,
+.column-3 {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  padding: 40px;
+}
+
+.column-1 {
+  margin-right: 20px;
+  background-color: red;
+  flex: 3 0 630px;
+}
+
+.column-2 {
+  height: 400px;
+  margin-right: 20px;
+  background-color: blue;
+  flex: 1 0 300px;
+}
+
+.column-3{
+  height: 400px;
+  background-color: green;
+  flex: 1 0 240px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
