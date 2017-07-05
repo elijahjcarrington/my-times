@@ -28,17 +28,6 @@ p {
   color: black;
 }
 
-div.overlay {
-
-}
-
-p.overlay {
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-}
-
 /*** Header ***/
 
 header {
@@ -92,42 +81,107 @@ nav.menu ul li a {
 
 /*** Main ***/
 
-div.main {
-  background-color: gray;
+.content {
+  display: flex;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
+  background-color: lightgray;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.column.left {
+  margin-right: 32px;
+  width: 630px;
+}
+
+.column.middle {
+  margin-right: 32px;
+  width: 300px;
+}
+
+.column.right {
+  width: 240px;
+}
+
+.column.left .aside {
+  padding: 0;
+  margin-top: 20px;;
+  clear: both;
+  background-color: green;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  margin: 0 auto;
-  width: 100%;
 }
 
-.column-1,
-.column-2,
-.column-3 {
-  display: inline-flex;
-  flex-flow: column nowrap;
-  padding: 40px;
-}
-
-.column-1 {
-  margin-right: 20px;
+.column.left .aside.left{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
   background-color: red;
-  flex: 3 0 630px;
 }
 
-.column-2 {
-  height: 400px;
-  margin-right: 20px;
+.column.left .aside.right{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
   background-color: blue;
-  flex: 1 0 300px;
 }
 
-.column-3{
-  height: 400px;
-  background-color: green;
-  flex: 1 0 240px;
+/*** Content ***/
+
+.story-content,
+span.overlay {
+  margin: 30px;
 }
 
+/*** Images ***/
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.lead-story .image-content {
+  height: 300px;
+  background-image: url("../img/img-story-main.png");
+  background-repeat: no-repeat;
+}
+
+
+/*** Overlay ***/
+
+/*div.overlay {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+p.overlay {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+*/
 
 
 
