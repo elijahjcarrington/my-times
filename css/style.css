@@ -1,0 +1,59 @@
+/*** Global ***/
+
+* {
+  border: 1px solid red;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+body, ul, ol, li, p {
+  color: black;
+  font-family: Verdana, serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/*** Header ***/
+
+header {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  background: white;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+header div.logo {
+  margin: auto 0;
+  display: inline-flex;
+
+}
+
+header div.logo img {
+  margin: auto 0;
+}
+
+header div.logo h6 {
+  text-decoration: none;
+  display: inline-flex;
+  margin-left: 10px;
+  color: MediumAquamarine;
+}
+
+nav ul li {
+  display: inline-flex;
+  margin: auto 0;
+}
+
+header h6,
+nav ul li a {
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+}
