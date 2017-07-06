@@ -36,6 +36,10 @@ p {
   color: black;
 }
 
+p.narrative {
+  padding-bottom: 20px;
+}
+
 /*** Header ***/
 
 header {
@@ -43,10 +47,13 @@ header {
   width: 100%;
   position: fixed;
   background: white;
-  border-bottom: 1px solid black;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
+
+  -webkit-box-shadow: 0px 20px 70px -20px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 20px 70px -20px rgba(0,0,0,0.25);
+  box-shadow: 0px 20px 70px -20px rgba(0,0,0,0.25);
 }
 
 /*** Logo ***/
@@ -89,31 +96,26 @@ header {
 
 /*** Main ***/
 
-
-
 .content {
   display: flex;
-  width: 100%;
   margin: 0 auto 78px auto;
   padding-top: 116px;
-  background-color: lightgray;
-  justify-content: center;
   align-content: center;
+  justify-content: space-between;
 }
 
 .column {
   display: flex;
   flex-direction: column;
   background-color: white;
+  margin: 0 20px;
 }
 
 .column.left {
-  margin-right: 32px;
-  flex: 0 0 630px;
+  flex: 0 1 630px;
 }
 
 .column.middle {
-  margin-right: 32px;
   flex: 0 1 300px;
 }
 
@@ -122,6 +124,7 @@ header {
 }
 
 .stories {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   margin-left: auto;
@@ -136,8 +139,12 @@ header {
 /*** Content ***/
 
 .story-content,
-span.overlay {
-  margin: 30px;
+.overlay {
+  margin: 20px;
+}
+
+.overlay.center {
+  text-align: center;
 }
 
 /*** Images ***/
@@ -153,11 +160,25 @@ span.overlay {
   color: white;
 }
 
-.lead-story .image-content {
+.image-content {
   height: 300px;
-  background-image: url("../img/img-story-main.png");
   background-repeat: no-repeat;
 }
+
+.image-content.lead-story {
+  background-image: url("../img/img-story-main.png");
+}
+
+.image-content.left-aside {
+  background-image: url("../img/img-story-2.png");
+}
+
+.image-content.right-aside {
+  background-image: url("../img/img-story-3.png");
+}
+
+
+
 
 
 
