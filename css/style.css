@@ -22,6 +22,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Georgia;
+  font-size: 30px;
+  font-style: normal;
+}
+
 p {
   font-family: Georgia;
   font-size: 17px;
@@ -43,18 +51,18 @@ header {
 
 /*** Logo ***/
 
-div.logo {
+.logo {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-div.logo img {
+.logo img {
   margin: auto 0;
   display: inline-flex;
 }
 
-h6.logo {
+.logo h6 {
   font-size: 14px;
   text-decoration: none;
   display: inline-flex;
@@ -64,29 +72,33 @@ h6.logo {
 
 /*** Menu ***/
 
-nav.menu {
+.menu {
   margin: auto 0;
   justify-content: flex-end;
   align-items: center;
 }
 
-nav.menu ul li {
+.menu ul li {
   display: inline-flex;
 }
 
-nav.menu ul li a {
+.menu ul li a {
   color: black;
   font-weight: bold;
 }
 
 /*** Main ***/
 
+
+
 .content {
   display: flex;
-  width: 1232px;
+  width: 100%;
   margin: 0 auto 78px auto;
   padding-top: 116px;
   background-color: lightgray;
+  justify-content: center;
+  align-content: center;
 }
 
 .column {
@@ -97,40 +109,29 @@ nav.menu ul li a {
 
 .column.left {
   margin-right: 32px;
-  width: 630px;
+  flex: 0 0 630px;
 }
 
 .column.middle {
   margin-right: 32px;
-  width: 300px;
+  flex: 0 1 300px;
 }
 
 .column.right {
-  width: 240px;
+  flex: 0 2 240px;
 }
 
-.column.left .aside {
-  padding: 0;
-  margin-top: 20px;;
-  clear: both;
-  background-color: green;
+.stories {
   display: flex;
   justify-content: space-between;
+  margin-left: auto;
 }
 
-.column.left .aside.left{
-  display: flex;
-  flex-direction: column;
+.story {
   width: 300px;
-  background-color: red;
 }
 
-.column.left .aside.right{
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  background-color: blue;
-}
+
 
 /*** Content ***/
 
@@ -157,31 +158,6 @@ span.overlay {
   background-image: url("../img/img-story-main.png");
   background-repeat: no-repeat;
 }
-
-
-/*** Overlay ***/
-
-/*div.overlay {
-  margin-top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 300px;
-  margin-top: 15px;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-}
-
-p.overlay {
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-}
-*/
 
 
 
